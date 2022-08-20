@@ -5,7 +5,7 @@
   "main": "./dist/vosk.js",
   "module": "./dist/vosk.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "npx rollup -c",
     "clean": "rm -rf ./node_modules && rm -rf ./dist"
   },
   "keywords": [
@@ -22,17 +22,18 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "tslib": "^2.4.0",
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
     "@types/uuid": "^8.3.0",
-    "rollup": "^2.39.0",
+    "rollup": "^2.78.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-web-worker-loader": "^1.6.0",
-    "ts-loader": "^8.0.17",
-    "tslib": "^2.1.0",
     "typescript": "^4.6.2",
     "worker-loader": "^3.0.8"
   }
